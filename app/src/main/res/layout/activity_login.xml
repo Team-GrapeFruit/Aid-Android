@@ -6,4 +6,283 @@
     android:layout_height="match_parent"
     tools:context=".view.login.LoginActivity">
 
+    <!-- 로그인하기 텍스트 -->
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/login_title"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/loginTextGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/loginTextGuideRight"
+        app:layout_constraintStart_toStartOf="@id/loginTextGuideLeft"
+        app:layout_constraintTop_toTopOf="@id/loginTextGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginTextGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginTextGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.415" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginTextGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.21" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginTextGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.255" />
+
+    <!-- 아이디 입력하기 텍스트 -->
+    <TextView
+        android:id="@+id/idText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/login_id_input"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/idTextGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/idTextGuideRight"
+        app:layout_constraintStart_toStartOf="@id/idTextGuideLeft"
+        app:layout_constraintTop_toTopOf="@id/idTextGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/idTextGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/idTextGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.315" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/idTextGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/idTextGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <!-- 아이디 인풋 -->
+    <EditText
+        android:id="@+id/idInput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/roboto_light"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:backgroundTint="@color/gray"
+        android:inputType="text"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@id/idInputGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/idInputGuideRight"
+        app:layout_constraintStart_toStartOf="@id/idInputGuideLeft"
+        app:layout_constraintTop_toTopOf="@id/idInputGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/idInputGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/idInputGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/idInputGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/idInputGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.42" />
+
+    <!-- 비밀번호 입력하기 텍스트 -->
+    <TextView
+        android:id="@+id/passwordText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/login_password_input"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/passwordTextGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/passwordTextGuideRight"
+        app:layout_constraintStart_toStartOf="@id/passwordTextGuideLeft"
+        app:layout_constraintTop_toTopOf="@id/passwordTextGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/passwordTextGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/passwordTextGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/passwordTextGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.445" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/passwordTextGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.465" />
+
+    <!-- 비밀번호 인풋 -->
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/roboto_light"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:backgroundTint="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@id/passwordInputGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/passwordInputGuideRight"
+        app:layout_constraintStart_toStartOf="@id/passwordInputGuideLeft"
+        app:layout_constraintTop_toTopOf="@id/passwordInputGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/passwordInputGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/passwordInputGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/passwordInputGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.465" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/passwordInputGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.516" />
+
+    <!-- 아이디 비밀번호 검사-->
+    <TextView
+        android:id="@+id/idPasswordCheck"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/id_password_check"
+        android:textColor="@color/purple"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/idPasswordCheckGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/idPasswordCheckGuideRight"
+        app:layout_constraintStart_toStartOf="@id/idPasswordCheckGuideLeft"
+        app:layout_constraintTop_toTopOf="@id/idPasswordCheckGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/idPasswordCheckGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/idPasswordCheckGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/idPasswordCheckGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.516" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/idPasswordCheckGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.54" />
+
+    <!-- 로그인 버튼 -->
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/login_btn_background"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/login_btn"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/loginBtnGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/loginBtnGuideRight"
+        app:layout_constraintStart_toStartOf="@id/loginBtnGuideLeft"
+        app:layout_constraintTop_toTopOf="@id/loginBtnGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginBtnGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginBtnGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginBtnGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.56" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginBtnGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.62" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
