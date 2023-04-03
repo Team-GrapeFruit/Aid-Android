@@ -13,6 +13,7 @@
 
     <!-- 돌아가기 버튼 -->
     <Button
+        android:id="@+id/backBtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/back_btn"
@@ -44,6 +45,7 @@
 
     <!-- 텍스트 사용하실 -->
     <TextView
+        android:id="@+id/usingText"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:fontFamily="@font/roboto_light"
@@ -79,6 +81,7 @@
 
     <!-- 텍스트 아이디를 입력해주세요! -->
     <TextView
+        android:id="@+id/selectId"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="@string/using_id"
@@ -113,6 +116,7 @@
 
     <!-- 텍스트 아이디 입력하기 -->
     <TextView
+        android:id="@+id/inputId"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="@string/input_id"
@@ -184,36 +188,37 @@
 
     <!-- 에디트 텍스트 이름 입력 -->
     <EditText
+        android:id="@+id/editTextId"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@id/editTextNameGuideBottom"
-        app:layout_constraintEnd_toEndOf="@id/editTextNameGuideRight"
-        app:layout_constraintStart_toStartOf="@id/editTextNameGuideLeft"
-        app:layout_constraintTop_toTopOf="@id/editTextNameGuideTop" />
+        app:layout_constraintBottom_toBottomOf="@id/editTextIdGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/editTextIdGuideRight"
+        app:layout_constraintStart_toStartOf="@id/editTextIdGuideLeft"
+        app:layout_constraintTop_toTopOf="@id/editTextIdGuideTop" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/editTextNameGuideLeft"
+        android:id="@+id/editTextIdGuideLeft"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.076" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/editTextNameGuideRight"
+        android:id="@+id/editTextIdGuideRight"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.92" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/editTextNameGuideTop"
+        android:id="@+id/editTextIdGuideTop"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.456" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/editTextNameGuideBottom"
+        android:id="@+id/editTextIdGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
@@ -221,6 +226,7 @@
 
     <!-- 다음으로 넘기는 버튼 -->
     <Button
+        android:id="@+id/nextBtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/signup_btn"
@@ -251,13 +257,13 @@
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.759" />
+        app:layout_constraintGuide_percent="0.539" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/nextBtnGuideBottom"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.818" />
+        app:layout_constraintGuide_percent="0.598" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
