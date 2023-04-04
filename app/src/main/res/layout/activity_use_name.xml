@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.SignUp.SignUp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GuideLeft28"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.073"/>
+
+    <!-- 돌아가기 버튼 -->
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/GuideLeft28"
+        app:layout_constraintEnd_toEndOf="@id/backBtnGuideRight"
+        app:layout_constraintTop_toTopOf="@id/backBtnGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/backBtnGuideBottm"
+        android:background="@drawable/back_btn"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/backBtnGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0934"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/backBtnGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.063"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/backBtnGuideBottm"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.082"/>
+
+    <!-- 텍스트 사용하실 -->
+    <TextView
+        android:id="@+id/usingText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/using"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_light"
+        app:layout_constraintStart_toStartOf="@id/GuideLeft28"
+        app:layout_constraintEnd_toEndOf="@id/usingTextGuideRight"
+        app:layout_constraintTop_toTopOf="@id/usingTextGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/usingTextGuideBottom"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/usingTextGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.32" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/usingTextGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.17" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/usingTextGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22" />
+
+    <!-- 텍스트 이름을 정해주세요! -->
+    <TextView
+        android:id="@+id/selectName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/GuideLeft28"
+        app:layout_constraintEnd_toEndOf="@id/selectNameGuideRight"
+        app:layout_constraintTop_toTopOf="@id/selectNameGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/selectNameGuideBottom"
+        android:text="@string/using_name"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/selectNameGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.62" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/selectNameGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/selectNameGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <!-- 텍스트 이름 입력하기 -->
+    <TextView
+        android:id="@+id/inputName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/GuideLeft28"
+        app:layout_constraintEnd_toEndOf="@id/inputNameGuideRight"
+        app:layout_constraintTop_toTopOf="@id/inputNameGuidTop"
+        app:layout_constraintBottom_toBottomOf="@id/inputNameGuideBottom"
+        android:text="@string/input_name"
+        android:textSize="12sp"
+        android:textColor="@color/black"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/inputNameGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.27"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/inputNameGuidTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.394"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/inputNameGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.43" />
+
+    <!-- 오른쪽 화살표 -->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/rightBtnGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/rightBtnGuideRight"
+        app:layout_constraintTop_toTopOf="@id/rightBtnGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/rightBtnGuideBottom"
+        android:background="@drawable/right_arrow"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightBtnGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.28"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightBtnGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.293"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightBtnGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.404"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightBtnGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.412" />
+
+    <!-- 에디트 텍스트 이름 입력 -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/editTextNameGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/editTextNameGuideRight"
+        app:layout_constraintTop_toTopOf="@id/editTextNameGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/editTextNameGuideBottom"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/editTextNameGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.076"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/editTextNameGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/editTextNameGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.456"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/editTextNameGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.509"/>
+
+    <!-- 텍스트 회원이신가요? -->
+    <TextView
+        android:id="@+id/isMember"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/isMemberGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/isMemberGuideRight"
+        app:layout_constraintTop_toTopOf="@id/isMemberGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/isMemberGuideBottom"
+        android:text="@string/is_member"
+        android:textSize="12sp"
+        android:gravity="center"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/isMemberGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/isMemberGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.563"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/isMemberGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.67"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/isMemberGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.71" />
+
+    <!-- 텍스트 로그인 -->
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/loginTextGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/loginTextGuideRight"
+        app:layout_constraintTop_toTopOf="@id/loginTextGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/loginTextGuideBottom"
+        android:text="@string/login"
+        android:textSize="12sp"
+        android:textColor="@color/light_blue"
+        android:gravity="center"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginTextGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.576"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginTextGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginTextGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.67"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/loginTextGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.71" />
+
+    <!-- 다음으로 넘기는 버튼 -->
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/nextBtnGuideLeft"
+        app:layout_constraintEnd_toEndOf="@id/nextBtnGuideRight"
+        app:layout_constraintTop_toTopOf="@id/nextBtnGuideTop"
+        app:layout_constraintBottom_toBottomOf="@id/nextBtnGuideBottom"
+        android:background="@drawable/signup_btn"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/nextBtnGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.118"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/nextBtnGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.887"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/nextBtnGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.539"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/nextBtnGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.598"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

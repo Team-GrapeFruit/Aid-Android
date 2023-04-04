@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Aid</string>
+    <string name="using">사용하실</string>
+    <string name="using_name">이름을 정해주세요!</string>
+    <string name="input_name">이름 입력하기</string>
+    <string name="is_member">회원이신가요?</string>
+    <string name="login">로그인</string>
+    <string name="next">계속하기</string>
+    <string name="using_id">아이디를 입력해주세요!</string>
+    <string name="input_id">아이디 입력하기</string>
+    <string name="using_password">비밀번호를 입력해주세요!</string>
+    <string name="input_password">비밀번호 입력하기</string>
+    <string name="check_password">비밀번호 확인하기</string>
+    <string name="signup">회원가입</string>
 </resources>
