@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GuideLeft28"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.073" />
+
+    <!-- 돌아가기 버튼 -->
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/back_btn"
+        app:layout_constraintBottom_toBottomOf="@id/backBtnGuideBottm"
+        app:layout_constraintEnd_toEndOf="@id/backBtnGuideRight"
+        app:layout_constraintStart_toStartOf="@id/GuideLeft28"
+        app:layout_constraintTop_toTopOf="@id/backBtnGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/backBtnGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0934" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/backBtnGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.063" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/backBtnGuideBottm"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.082" />
+
+    <!-- 텍스트 사용하실 -->
+    <TextView
+        android:id="@+id/usingText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/using"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/usingTextGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/usingTextGuideRight"
+        app:layout_constraintStart_toStartOf="@id/GuideLeft28"
+        app:layout_constraintTop_toTopOf="@id/usingTextGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/usingTextGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.32" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/usingTextGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.17" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/usingTextGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22" />
+
+    <!-- 텍스트 아이디를 입력해주세요! -->
+    <TextView
+        android:id="@+id/selectId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/using_id"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/selectIdGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/selectIdGuideRight"
+        app:layout_constraintStart_toStartOf="@id/GuideLeft28"
+        app:layout_constraintTop_toTopOf="@id/selectIdGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/selectIdGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.72" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/selectIdGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/selectIdGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <!-- 텍스트 아이디 입력하기 -->
+    <TextView
+        android:id="@+id/inputId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/input_id"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/inputIdGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/inputIdGuideRight"
+        app:layout_constraintStart_toStartOf="@id/GuideLeft28"
+        app:layout_constraintTop_toTopOf="@id/inputIdGuidTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/inputIdGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.29" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/inputIdGuidTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.394" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/inputIdGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.43" />
+
+    <!-- 오른쪽 화살표 -->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/right_arrow"
+        app:layout_constraintBottom_toBottomOf="@id/rightBtnGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/rightBtnGuideRight"
+        app:layout_constraintStart_toStartOf="@id/rightBtnGuideLeft"
+        app:layout_constraintTop_toTopOf="@id/rightBtnGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightBtnGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightBtnGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.313" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightBtnGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.404" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightBtnGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.412" />
+
+    <!-- 에디트 텍스트 이름 입력 -->
+    <EditText
+        android:id="@+id/editTextId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/editTextIdGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/editTextIdGuideRight"
+        app:layout_constraintStart_toStartOf="@id/editTextIdGuideLeft"
+        app:layout_constraintTop_toTopOf="@id/editTextIdGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/editTextIdGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.076" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/editTextIdGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/editTextIdGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.456" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/editTextIdGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.509" />
+
+    <!-- 다음으로 넘기는 버튼 -->
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/signup_btn"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/nextBtnGuideBottom"
+        app:layout_constraintEnd_toEndOf="@id/nextBtnGuideRight"
+        app:layout_constraintStart_toStartOf="@id/nextBtnGuideLeft"
+        app:layout_constraintTop_toTopOf="@id/nextBtnGuideTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/nextBtnGuideLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.118" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/nextBtnGuideRight"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.887" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/nextBtnGuideTop"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.539" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/nextBtnGuideBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.598" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
