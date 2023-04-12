@@ -17,4 +17,6 @@
     <string name="login_password_input">비밀번호 입력하기</string>
     <string name="login_btn">로그인</string>
     <string name="id_password_check">아이디나 비밀번호가 일치하지 않습니다.</string>
+    <string name="empty_store">등록된 가게가 없어요ㅠ</string>
+    <string name="store_registation">+ 가게 등록하기</string>
 </resources>

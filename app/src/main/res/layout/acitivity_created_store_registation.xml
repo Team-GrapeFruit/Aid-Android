@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 어드민 이미지 -->
+    <ImageView
+        android:id="@+id/admin_img"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/admin_img_guideline_start"
+        app:layout_constraintEnd_toEndOf="@id/admin_img_guideline_end"
+        app:layout_constraintTop_toTopOf="@id/admin_img_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/admin_img_guideline_bottom"
+        android:background="@drawable/admin_img"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/admin_img_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.023"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/admin_img_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.075"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/admin_img_guideline_start"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.044"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/admin_img_guideline_end"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.155"/>
+
+    <!-- 어드민 이름 -->
+    <TextView
+        android:id="@+id/admin_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/admin_name_guideline_start"
+        app:layout_constraintEnd_toEndOf="@id/admin_name_guideline_end"
+        app:layout_constraintTop_toTopOf="@id/admin_name_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/admin_name_guideline_bottom"
+        android:text="백승민 사장님"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_light"
+        android:gravity="center"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/admin_name_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/admin_name_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.074"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/admin_name_guideline_start"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/admin_name_guideline_end"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7"/>
+
+    <!-- 뷰 -->
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/view_guideline_bottom"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/view_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.083"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/view_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.085"/>
+
+    <!-- 가게 리스트 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/store_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/store_list_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/store_list_guideline_bottom"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/store_list_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.085"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/store_list_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.881"/>
+
+    <!-- 가게 등록하기 -->
+    <TextView
+        android:id="@+id/store_registation"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/store_registation_guideline_start"
+        app:layout_constraintEnd_toEndOf="@id/store_registation_guideline_end"
+        app:layout_constraintTop_toBottomOf="@id/store_list"
+        android:text="@string/store_registation"
+        android:textSize="14sp"
+        android:textColor="@color/purple"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/store_registation_guideline_start"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.36"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/store_registation_guideline_end"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.64"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
