@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/add_category_background"
+    android:elevation="25dp">
+
+    <!-- 텍스트 카테고리 추가 -->
+    <TextView
+        android:id="@+id/text_add_category"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/text_add_category_guideline_start"
+        app:layout_constraintEnd_toEndOf="@id/text_add_category_guideline_end"
+        app:layout_constraintTop_toTopOf="@id/text_add_category_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/text_add_category_guideline_bottom"
+        android:text="@string/add_category"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/text_add_category_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.089"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/text_add_category_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.245"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/text_add_category_guideline_start"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.327"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/text_add_category_guideline_end"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.671"/>
+
+    <!-- 카테고리 추가 에디트 텍스트 -->
+    <EditText
+        android:id="@+id/input_category"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/input_category_guideline_start"
+        app:layout_constraintEnd_toEndOf="@id/input_category_guideline_end"
+        app:layout_constraintTop_toTopOf="@id/input_category_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/input_category_guideline_bottom"
+        android:background="@drawable/add_category_edit_text"
+        android:hint="카테고리 입력하기"
+        android:textColorHint="@color/gray7"
+        android:textSize="12sp"
+        android:paddingStart="8dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/input_category_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.36"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/input_category_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.59"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/input_category_guideline_start"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/input_category_guideline_end"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"/>
+
+    <!-- 취소 -->
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/cancel_guideline_start"
+        app:layout_constraintEnd_toEndOf="@id/cancel_guideline_end"
+        app:layout_constraintTop_toTopOf="@id/cancel_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/cancel_guideline_bottom"
+        android:text="@string/cancel"
+        android:textSize="14sp"
+        android:textColor="@color/purple"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cancel_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cancel_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cancel_guideline_start"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.71"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cancel_guideline_end"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.837"/>
+
+    <!-- 확인 -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/check_guideline_start"
+        app:layout_constraintEnd_toEndOf="@id/check_guideline_end"
+        app:layout_constraintTop_toTopOf="@id/check_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/check_guideline_bottom"
+        android:text="@string/check"
+        android:textSize="14sp"
+        android:textColor="@color/purple"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/check_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/check_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/check_guideline_start"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/check_guideline_end"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.categorysetting.CategorySettingActivity">
+
+    <!-- 뒤로가기 버튼 -->
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/btn_back"
+        app:layout_constraintStart_toStartOf="@id/btn_back_guideline_start"
+        app:layout_constraintEnd_toEndOf="@id/btn_back_guideline_end"
+        app:layout_constraintTop_toTopOf="@id/btn_back_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/btn_back_guideline_bottom"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btn_back_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.036"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btn_back_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.058"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btn_back_guideline_start"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.045"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btn_back_guideline_end"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.092"/>
+
+    <!-- 카테고리 삭제하기 -->
+    <TextView
+        android:id="@+id/category_delete"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/delete_category"
+        android:textColor="@color/purple"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@id/category_delete_guideline_start"
+        app:layout_constraintEnd_toEndOf="@id/category_delete_guideline_end"
+        app:layout_constraintTop_toTopOf="@id/category_delete_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/category_delete_guideline_bottom"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/category_delete_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.037"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/category_delete_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.068"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/category_delete_guideline_start"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.67"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/category_delete_guideline_end"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98"/>
+
+    <!-- 카테고리 1 -->
+    <TextView
+        android:id="@+id/category_1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="전체"
+        app:layout_constraintStart_toStartOf="@id/cotegory_1_guideline_start"
+        app:layout_constraintTop_toTopOf="@id/cotegory_1_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/cotegory_1_guideline_bottom"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cotegory_1_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.104"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cotegory_1_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.132"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cotegory_1_guideline_start"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.044"/>
+
+    <!-- 카테고리 2 -->
+    <TextView
+        android:id="@+id/category_2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="21dp"
+        android:text="떡볶이"
+        app:layout_constraintStart_toEndOf="@id/category_1"
+        app:layout_constraintTop_toTopOf="@id/cotegory_2_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/cotegory_2_guideline_bottom"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cotegory_2_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.104"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cotegory_2_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.132"/>
+
+    <!-- 카테고리 3 -->
+    <TextView
+        android:id="@+id/category_3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="21dp"
+        android:text="튀김"
+        app:layout_constraintStart_toEndOf="@id/category_2"
+        app:layout_constraintTop_toTopOf="@id/cotegory_3_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/cotegory_3_guideline_bottom"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cotegory_3_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.104"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cotegory_3_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.132"/>
+
+    <!-- 카테고리 4 -->
+    <TextView
+        android:id="@+id/category_4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="21dp"
+        android:text="음료"
+        app:layout_constraintStart_toEndOf="@id/category_3"
+        app:layout_constraintTop_toTopOf="@id/cotegory_4_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/cotegory_4_guideline_bottom"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cotegory_4_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.104"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cotegory_4_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.132"/>
+
+    <!-- 카테고리 추가 버튼 -->
+    <ImageView
+        android:id="@+id/plus_cotegory"
+        android:layout_width="17dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/plus_category"
+        app:layout_constraintStart_toEndOf="@id/category_4"
+        app:layout_constraintTop_toTopOf="@id/plus_cotegory_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/plus_cotegory_guideline_bottom"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/plus_cotegory_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.108"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/plus_cotegory_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13"/>
+
+    <!-- 뷰 -->
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/gray6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/view_guideline_bottom"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/view_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.142"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/view_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.144"/>
+
+    <!-- 메뉴 리스트 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/menu_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/menu_list_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/menu_list_guideline_bottom"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/menu_list_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.144"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/menu_list_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.925"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/option_layout_background"
+        android:elevation="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_list"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- 홈 버튼 -->
+        <ImageView
+            android:id="@+id/home_btn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/home_1"
+            app:layout_constraintStart_toStartOf="@id/home_btn_guideline_start"
+            app:layout_constraintEnd_toEndOf="@id/home_btn_guideline_end"
+            app:layout_constraintTop_toTopOf="@id/home_btn_guideline_top"
+            app:layout_constraintBottom_toBottomOf="@id/home_btn_guideline_bottom"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/home_btn_guideline_top"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.14"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/home_btn_guideline_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.57"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/home_btn_guideline_start"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.182"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/home_btn_guideline_end"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25"/>
+
+        <!-- 텍스트 홈 -->
+        <TextView
+            android:id="@+id/text_home"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="@id/text_home_guideline_start"
+            app:layout_constraintEnd_toEndOf="@id/text_home_guideline_end"
+            app:layout_constraintTop_toTopOf="@id/text_home_guideline_top"
+            app:layout_constraintBottom_toBottomOf="@id/text_home_guideline_bottom"
+            android:text="@string/home"
+            android:textSize="12sp"
+            android:gravity="center"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/text_home_guideline_top"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.59"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/text_home_guideline_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.91"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/text_home_guideline_start"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.2"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/text_home_guideline_end"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.235"/>
+
+        <!-- 메뉴 관리 이미지 -->
+        <ImageView
+            android:id="@+id/menu_management_btn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="@id/menu_management_btn_guideline_start"
+            app:layout_constraintEnd_toEndOf="@id/menu_management_btn_guideline_end"
+            app:layout_constraintTop_toTopOf="@id/menu_management_btn_guideline_top"
+            app:layout_constraintBottom_toBottomOf="@id/menu_management_btn_guideline_bottom"
+            android:background="@drawable/menu_management"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/menu_management_btn_guideline_top"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.14"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/menu_management_btn_guideline_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.526"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/menu_management_btn_guideline_start"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.475"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/menu_management_btn_guideline_end"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.525"/>
+
+        <!-- 텍스트 메뉴 관리 -->
+        <TextView
+            android:id="@+id/text_menu_management"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="@id/text_menu_management_guideline_start"
+            app:layout_constraintEnd_toEndOf="@id/text_menu_management_guideline_end"
+            app:layout_constraintTop_toTopOf="@id/text_menu_management_guideline_top"
+            app:layout_constraintBottom_toBottomOf="@id/text_menu_management_guideline_bottom"
+            android:text="@string/menu_management"
+            android:textSize="12sp"
+            android:gravity="center"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/text_menu_management_guideline_top"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.59"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/text_menu_management_guideline_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.91"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/text_menu_management_guideline_start"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.425"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/text_menu_management_guideline_end"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.574"/>
+
+        <!-- 자리 관리 이미지 -->
+        <ImageView
+            android:id="@+id/seat_management_btn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="@id/seat_management_btn_guideline_start"
+            app:layout_constraintEnd_toEndOf="@id/seat_management_btn_guideline_end"
+            app:layout_constraintTop_toTopOf="@id/seat_management_btn_guideline_top"
+            app:layout_constraintBottom_toBottomOf="@id/seat_management_btn_guideline_bottom"
+            android:background="@drawable/seat_management"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/seat_management_btn_guideline_top"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.14"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/seat_management_btn_guideline_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.57"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/seat_management_btn_guideline_start"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.78"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/seat_management_btn_guideline_end"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.843"/>
+
+        <!-- 텍스트 자리 관리 -->
+        <TextView
+            android:id="@+id/text_seat_managemnet"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="@id/text_seat_management_guideline_start"
+            app:layout_constraintEnd_toEndOf="@id/text_seat_management_guideline_end"
+            app:layout_constraintTop_toTopOf="@id/text_seat_management_guideline_top"
+            app:layout_constraintBottom_toBottomOf="@id/text_seat_management_guideline_bottom"
+            android:text="@string/seat_management"
+            android:textSize="12sp"
+            android:gravity="center"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/text_seat_management_guideline_top"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.59"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/text_seat_management_guideline_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.91"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/text_seat_management_guideline_start"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.732"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/text_seat_management_guideline_end"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.882"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
