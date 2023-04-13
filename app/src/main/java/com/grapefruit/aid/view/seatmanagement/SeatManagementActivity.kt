@@ -1,12 +1,12 @@
-package com.grapefruit.aid.view.SignUp
+package com.grapefruit.aid.view.seatmanagement
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.grapefruit.aid.R
 
-class SignUp : AppCompatActivity() {
+class SeatManagementActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_use_name)
+        setContentView(R.layout.activity_seat_management)
     }
 }
