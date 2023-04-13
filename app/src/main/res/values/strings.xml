@@ -17,6 +17,32 @@
     <string name="login_password_input">비밀번호 입력하기</string>
     <string name="login_btn">로그인</string>
     <string name="id_password_check">아이디나 비밀번호가 일치하지 않습니다.</string>
+
+    <string name="use">사용중</string>
+    <string name="empty">빈자리</string>
+    <string name="table1"><b>1번</b>\n6인용</string>
+    <string name="table2"><b>2번</b>\n1인용</string>
+    <string name="table3"><b>3번</b>\n1인용</string>
+    <string name="table4"><b>4번</b>\n1인용</string>
+    <string name="table5"><b>5번</b>\n1인용</string>
+    <string name="table6"><b>6번</b>\n4인용</string>
+    <string name="table7"><b>7번</b>\n6인용</string>
+    <string name="table8"><b>8번</b>\n1인용</string>
+    <string name="table9"><b>9번</b>\n1인용</string>
+    <string name="table10"><b>10번</b>\n1인용</string>
+    <string name="table11"><b>11번</b>\n1인용</string>
+    <string name="table12"><b>12번</b>\n4인용</string>
+    <string name="seat_add">추가하기</string>
+    <string name="seat_remove">삭제하기</string>
+    <string name="home">홈</string>
+    <string name="menu_management">메뉴 관리</string>
+    <string name="seat_management">자리 관리</string>
+    <string name="seat_add2">자리 추가</string>
+    <string name="seat_make">몇인용 자리를 만드실 건가요?</string>
+    <string name="cancel">취소</string>
+    <string name="check">확인</string>
+    <string name="remove"><b>1번 자리</b>를 삭제하시겠습니까?</string>
+
     <string name="empty_store">등록된 가게가 없어요ㅠ</string>
     <string name="store_registation">+ 가게 등록하기</string>
 </resources>
