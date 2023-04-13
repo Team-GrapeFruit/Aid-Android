@@ -1,6 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:layout_height="100dp"
+    android:elevation="10dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/dialog_background">
+
+    <!-- 자리삭제 텍스트 -->
+    <TextView
+        android:id="@+id/seat_remove_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/remove"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:fontFamily="@font/roboto_light"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/seat_remove_text_guide_start"
+        app:layout_constraintEnd_toEndOf="@id/seat_remove_text_guide_end"
+        app:layout_constraintTop_toTopOf="@id/seat_remove_text_guide_top"
+        app:layout_constraintBottom_toBottomOf="@id/seat_remove_text_guide_bottom"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/seat_remove_text_guide_start"
+        android:layout_width="0.1dp"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/seat_remove_text_guide_end"
+        android:layout_width="0.1dp"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/seat_remove_text_guide_top"
+        android:layout_width="0.1dp"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.11"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/seat_remove_text_guide_bottom"
+        android:layout_width="0.1dp"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3"/>
+
+    <!-- 취소 버튼 -->
+    <TextView
+        android:id="@+id/btn_cansel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/cancel"
+        android:textColor="@color/purple"
+        android:textSize="14sp"
+        android:fontFamily="@font/roboto_light"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/btn_cansel_guide_start"
+        app:layout_constraintEnd_toEndOf="@id/btn_cansel_guide_end"
+        app:layout_constraintTop_toTopOf="@id/btn_cansel_guide_top"
+        app:layout_constraintBottom_toBottomOf="@id/btn_cansel_guide_bottom"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btn_cansel_guide_start"
+        android:layout_width="0.1dp"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.755"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btn_cansel_guide_end"
+        android:layout_width="0.1dp"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btn_cansel_guide_top"
+        android:layout_width="0.1dp"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.765"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btn_cansel_guide_bottom"
+        android:layout_width="0.1dp"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95"/>
+
+    <!-- 취소 버튼 -->
+    <TextView
+        android:id="@+id/btn_check"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/check"
+        android:textColor="@color/purple"
+        android:textSize="14sp"
+        android:fontFamily="@font/roboto_light"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/btn_check_guide_start"
+        app:layout_constraintEnd_toEndOf="@id/btn_check_guide_end"
+        app:layout_constraintTop_toTopOf="@id/btn_check_guide_top"
+        app:layout_constraintBottom_toBottomOf="@id/btn_check_guide_bottom"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btn_check_guide_start"
+        android:layout_width="0.1dp"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.88"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btn_check_guide_end"
+        android:layout_width="0.1dp"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.975"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btn_check_guide_top"
+        android:layout_width="0.1dp"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.765"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btn_check_guide_bottom"
+        android:layout_width="0.1dp"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
