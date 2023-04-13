@@ -43,5 +43,6 @@
     <string name="check">확인</string>
     <string name="remove"><b>1번 자리</b>를 삭제하시겠습니까?</string>
 
-
+    <string name="empty_store">등록된 가게가 없어요ㅠ</string>
+    <string name="store_registation">+ 가게 등록하기</string>
 </resources>
