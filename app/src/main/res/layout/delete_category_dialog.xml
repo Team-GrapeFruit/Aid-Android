@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="321dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/add_category_background"
+    android:elevation="25dp">
+
+    <!-- 카테고리 삭제 텍스트 -->
+    <TextView
+        android:id="@+id/text_delete_category"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/text_delete_category_guideline_start"
+        app:layout_constraintEnd_toEndOf="@id/text_delete_category_guideline_end"
+        app:layout_constraintTop_toTopOf="@id/text_delete_category_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/text_delete_category_guideline_bottom"
+        android:text="@string/delete_category_dialog"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/text_delete_category_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.04"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/text_delete_category_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.117"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/text_delete_category_guideline_start"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/text_delete_category_guideline_end"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.672"/>
+
+    <!-- 카테고리 1 -->
+    <TextView
+        android:id="@+id/category_1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/category_1_guideline_start"
+        app:layout_constraintTop_toTopOf="@id/category_1_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/category_1_guideline_bottom"
+        android:text="떡볶이"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/category_1_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.222"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/category_1_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.295"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/category_1_guideline_start"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.052"/>
+
+    <!-- 카테고리 2 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/category_2_guideline_start"
+        app:layout_constraintTop_toTopOf="@id/category_2_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/category_2_guideline_bottom"
+        android:text="튀김"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/category_2_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.351"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/category_2_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.426"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/category_2_guideline_start"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.052"/>
+
+    <!-- 카테고리 3 -->
+    <TextView
+        android:id="@+id/category_3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/category_3_guideline_start"
+        app:layout_constraintTop_toTopOf="@id/category_3_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/category_3_guideline_bottom"
+        android:text="음료"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/category_3_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.483"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/category_3_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.559"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/category_3_guideline_start"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.052"/>
+
+    <!-- 삭제 버튼 1 -->
+    <ImageView
+        android:id="@+id/delete_btn_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/delete_btn_1_guideline_start"
+        app:layout_constraintEnd_toEndOf="@id/delete_btn_1_guideline_end"
+        app:layout_constraintTop_toTopOf="@id/delete_btn_1_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/delete_btn_1_guideline_bottom"
+        android:background="@drawable/delete_btn"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/delete_btn_1_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.23"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/delete_btn_1_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.276"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/delete_btn_1_guideline_start"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.888"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/delete_btn_1_guideline_end"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.945"/>
+
+    <!-- 삭제 버튼 2 -->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/delete_btn_2_guideline_start"
+        app:layout_constraintEnd_toEndOf="@id/delete_btn_2_guideline_end"
+        app:layout_constraintTop_toTopOf="@id/delete_btn_2_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/delete_btn_2_guideline_bottom"
+        android:background="@drawable/delete_btn"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/delete_btn_2_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.351"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/delete_btn_2_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/delete_btn_2_guideline_start"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.888"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/delete_btn_2_guideline_end"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.945"/>
+
+    <!-- 삭제 버튼 3 -->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/delete_btn_3_guideline_start"
+        app:layout_constraintEnd_toEndOf="@id/delete_btn_3_guideline_end"
+        app:layout_constraintTop_toTopOf="@id/delete_btn_3_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/delete_btn_3_guideline_bottom"
+        android:background="@drawable/delete_btn"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/delete_btn_3_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.49"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/delete_btn_3_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.536"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/delete_btn_3_guideline_start"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.888"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/delete_btn_3_guideline_end"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.945"/>
+
+    <!-- 취소 -->
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/cancel_guideline_start"
+        app:layout_constraintEnd_toEndOf="@id/cancel_guideline_end"
+        app:layout_constraintTop_toTopOf="@id/cancel_guideline_top"
+        app:layout_constraintBottom_toBottomOf="@id/cancel_guideline_bottom"
+        android:text="@string/cancel"
+        android:textSize="14sp"
+        android:textColor="@color/purple"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cancel_guideline_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.91"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cancel_guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.986"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cancel_guideline_start"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.84"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cancel_guideline_end"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,10 +12,11 @@
         android:theme="@style/Theme.Aid"
         tools:targetApi="31">
         <activity
+            android:name=".CategorySettingActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.SignUp.SignUp"
-            android:exported="true">
-        </activity>
-
+            android:exported="true"></activity>
         <activity
             android:name=".view.login.LoginActivity"
             android:exported="true">
@@ -25,11 +26,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".view.MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <meta-data
             android:name="preloaded_fonts"

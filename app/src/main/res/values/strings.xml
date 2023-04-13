@@ -17,4 +17,12 @@
     <string name="login_password_input">비밀번호 입력하기</string>
     <string name="login_btn">로그인</string>
     <string name="id_password_check">아이디나 비밀번호가 일치하지 않습니다.</string>
+    <string name="delete_category">카테고리 삭제하기</string>
+    <string name="home">홈</string>
+    <string name="menu_management">메뉴관리</string>
+    <string name="seat_management">자리관리</string>
+    <string name="cancel">취소</string>
+    <string name="check">확인</string>
+    <string name="add_category">카테고리 추가</string>
+    <string name="delete_category_dialog">카테고리 삭제</string>
 </resources>
