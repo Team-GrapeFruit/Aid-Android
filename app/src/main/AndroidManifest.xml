@@ -12,7 +12,7 @@
         android:theme="@style/Theme.Aid"
         tools:targetApi="31">
         <activity
-            android:name=".view.SignUp.SignUp"
+            android:name=".view.signup.SignUp"
             android:exported="true">
         </activity>
 
