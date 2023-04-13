@@ -12,25 +12,9 @@
         android:theme="@style/Theme.Aid"
         tools:targetApi="31">
         <activity
-            android:name=".CategorySettingActivity"
-            android:exported="false" />
-        <activity
             android:name=".view.SignUp.SignUp"
             android:exported="true">
         </activity>
-
-        <activity
-            android:name=".view.seatmanagement.SeatManagementActivity"
-            android:exported="false" />
-            
-        <activity
-            android:name=".view.SignUp.SignUp"
-            android:exported="true">
-        </activity>
-        
-        <acitivity
-            android:name=".StoreRegistation"
-            android:exported="false" />
 
         <activity
             android:name=".view.login.LoginActivity"
@@ -41,6 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".view.MainActivity"
             android:exported="true">
